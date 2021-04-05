@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IndexViewModel
+
+@foreach (var x in Model.Recipes)
+{
+    <p>@x.RecipeTitle</p>
+}
+
+
+<div page-info="@Model.PageNumberingInfo" page-url-mealtype="@Model.MealCategory">
+
+</div>
